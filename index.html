@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shreya | UGC Creator • Web Developer • Creative Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ... (Your existing CSS remains the same until the Video section) ... */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+        url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1920&q=80')
+        center/cover no-repeat fixed;
+    color:#fff;
+    line-height:1.6;
+}
+
+section{
+    padding:90px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:34px;
+}
+
+/* ===== HERO ===== */
+header{
+    text-align:center;
+    padding:140px 20px;
+}
+
+header h1{
+    font-size:50px;
+    font-weight:700;
+}
+
+header p{
+    font-size:18px;
+    color:#ddd;
+    margin:15px 0 35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#00c3ff;
+    color:#000;
+    font-weight:600;
+    border-radius:30px;
+    transition:0.3s;
+    text-decoration: none;
+}
+
+/* ===== GRID ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+/* ===== GLASS CARD ===== */
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
+    text-align: center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,195,255,0.25);
+}
+
+/* ===== UPDATED VIDEO STYLES ===== */
+.video-wrapper {
+    width: 100%;
+    max-width: 280px; /* Limits width to keep the "phone" look */
+    margin: 0 auto 18px;
+    border: 6px solid #333; /* Simulated phone border */
+    border-radius: 25px;
+    overflow: hidden;
+    background: #000;
+}
+
+video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 9 / 16; /* Maintains vertical reel format */
+    object-fit: cover;
+}
+
+/* ... (Remaining existing styles) ... */
+.full-width{ width:100%; border-radius:20px; margin-top:20px; }
+.skills{ display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
+.skill{ padding:10px 20px; background:rgba(255,255,255,0.1); border-radius:30px; }
+.contact-box{ text-align:center; background:rgba(255,255,255,0.08); padding:40px; border-radius:25px; }
+footer{ text-align:center; padding:40px; background:#000; color:#777; }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Shreya</h1>
+    <p>UGC Creator • Web Developer • Creative Designer</p>
+    <a href="#contact" class="btn">Work With Me</a>
+</header>
+
+<section>
+<h2>UGC Video Portfolio</h2>
+
+<div class="grid">
+
+    <div class="card">
+    <div class="video-frame">
+        <video controls>
+            <source src="Find Your Perfect Address.mp4" type="video/mp4">
+        </video>
+    </div>
+    <h3>Real Estate Showcase</h3>
+</div>
+
+<div class="card">
+    <div class="video-frame">
+        <video controls>
+            <source src="Untitled design.mp4" type="video/mp4">
+        </video>
+    </div>
+    <h3>Larana Skincare Duo</h3>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-box">
+        <p><strong>Email:</strong> kolishreya2004@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8788665308</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Shreya | Building Brands That Convert
+</footer>
+
+</body>
+</html>
